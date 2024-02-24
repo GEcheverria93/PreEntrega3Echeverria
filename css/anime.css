@@ -17,6 +17,11 @@ body{
     line-height: 1.4;
     color: var(--dark);
 }
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
 img{
     width: 100%;
     display: block;
