@@ -1,0 +1,11 @@
+@use "../variables.scss" as *;
+
+.navbarContainer {
+    position: fixed;
+    width: 100%;
+    background-color: $black;
+    border-color: $black !important;
+    .navbarText {
+        color: $white !important;
+    }
+}
