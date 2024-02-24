@@ -1,0 +1,71 @@
+@use "../variables.scss" as *;
+
+.blog{
+    background: $white;
+    padding: 4.5rem 0;
+
+    .blog-content{
+        margin: 2rem 0;
+
+        .blog-img{
+            position: relative;
+        }
+
+        .luffy-img {
+            img {
+                height: 580px;
+            }
+        }
+
+        .blog-text{
+            margin: 2.2rem 0;
+            padding: 0 1rem;
+
+            span{
+                font-weight: 300;
+                display: block;
+                padding-bottom: 0.5rem;
+            }
+
+            h2{
+                font-family: $Playfair;
+                padding: 1rem 0;
+                font-size: 1.65rem;
+                font-weight: 500;
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 1.1rem;
+                opacity: 0.9;
+                padding-bottom: 1.2rem;
+            }
+            
+            a{
+                font-family: $Roboto;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: $dark;
+                display: inline-block;
+                background: $dark;
+                color: $white;
+                padding: 0.55rem 1.2rem;
+                transition: all 0.5s ease;
+            }
+
+            a:hover{
+                background: $exDark;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media screen and (min-width: 992px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

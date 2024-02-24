@@ -1,10 +1,7 @@
 @use "../variables.scss" as *;
 
-.portfolio-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: $black;
+.anime-footer {
+    background: $exDark;
     color: $white;
     text-align: center;
     padding: 2rem 0;
@@ -31,14 +28,14 @@
 
         a:hover{
             background: $white;
-            color: $aquamarine;
+            color: $exDark;
         }
     }
 
     span{
         margin-top: 1rem;
         display: block;
-        font-family: 'Playfair Display', serif;
+        font-family: $Playfair;
         letter-spacing: 2px;
     }
 }

@@ -1,0 +1,72 @@
+@use "../variables.scss" as *;
+
+.anime-header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/anime/banner.webp) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    .anime-navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+
+        @media screen and (min-width: 540px) {
+            .navbar-nav a{
+                padding-right: 1.2rem;
+                padding-left: 1.2rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .banner {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $white;
+
+        .banner-title {
+            font-size: 3rem;
+            font-family: $Playfair;
+            line-height: 1.2;
+
+            span {
+                font-family: $Playfair;
+                color: $aquamarine;
+            }
+
+            @media screen and (min-width: 540px) {
+                font-size: 5rem;
+            }
+        }
+
+        p {
+            padding: 1rem 0 2rem 0;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            font-family: $Roboto;
+            font-weight: 300;
+            word-spacing: 2px
+        }
+
+        @media screen and (min-width: 540px) {
+            form{
+                margin-top: 1.4rem;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
